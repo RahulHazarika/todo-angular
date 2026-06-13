@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ToDoAppClientApp/ToDoAppClientApp.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>

@@ -1,0 +1,54 @@
+<h2>Todo App</h2>
+
+<!-- Add Todo -->
+<div>
+  <input [(ngModel)]="newTodoTitle"
+         placeholder="Enter todo" (keyup.enter)="addTodo()"/>
+
+  <button class="btn btn-add" (click)="addTodo()">Add</button>
+</div>
+<div>
+  <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+</div>
+
+<hr />
+
+<!-- Todo List -->
+<ul>
+  <li *ngFor="let todo of todos">
+
+    <!-- Checkbox -->
+    <input type="checkbox"
+           [checked]="todo.isCompleted"  (change)="saveEditOnCheckBox(todo)"/>
+
+    <!-- Title -->
+    <span [style.textDecoration]="todo.isCompleted ? 'line-through' : 'none'">
+      {{ todo.title }}
+    </span>
+
+    <!-- Actions -->
+    <button (click)="startEdit(todo)" [disabled]="todo.isCompleted">Edit</button>
+    <button (click)="deleteTodo(todo.id)" [disabled]="todo.isCompleted">Delete</button>
+
+    <!-- Edit Mode -->
+    <div *ngIf="editingId === todo.id">
+      <input [(ngModel)]="editTitle" (keyup.enter)="saveEdit(todo)"/>
+      <button (click)="saveEdit(todo)">Save</button>
+    </div>
+
+  </li>
+</ul>
+<style>
+  button {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, opacity 0.2s;
+    margin: 1px 5px 5px 1px;
+  }
+
+  
+</style>
