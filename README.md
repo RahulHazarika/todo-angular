@@ -1,17 +1,18 @@
-# Todo List API
+# Todo List App
 
-Built with .NET 8 Web API
+Built with Angular
 
 ## Run the project
 1. Clone the repo
-2. Open in Visual Studio
-3. Press F5 or run:
-dotnet run
+2. Run:
+npm install
 
-API runs on http://localhost:5021
+ng serve
+3. Open http://localhost:56451
 
-## Endpoints
-- GET /api/ToDo — get all todos
-- POST /api/ToDo — add a todo
-- PATCH /api/ToDo/{id} — update a todo
-- DELETE /api/ToDo/{id} — delete a todo
+## Requirements
+- Node.js
+- Angular CLI: npm install -g @angular/cli
+
+## API
+Make sure the Todo Web API is running on http://localhost:5022
