@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\RahulGit\\ToDoAppClientApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|c:\\rahulgit\\todoappclientapp\\todoappclientapp\\src\\app\\components\\todo\\todo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|solutionrelative:todoappclientapp\\src\\app\\components\\todo\\todo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|c:\\rahulgit\\todoappclientapp\\todoappclientapp\\src\\app\\components\\todo\\todo.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|solutionrelative:todoappclientapp\\src\\app\\components\\todo\\todo.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|c:\\rahulgit\\todoappclientapp\\todoappclientapp\\src\\app\\services\\todoservices.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|solutionrelative:todoappclientapp\\src\\app\\services\\todoservices.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|c:\\rahulgit\\todoappclientapp\\todoappclientapp\\src\\app\\components\\todo\\todo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|solutionrelative:todoappclientapp\\src\\app\\components\\todo\\todo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{741A74A3-327A-980F-EADD-B5B1C30F0BC3}|ToDoAppClientApp\\ToDoAppClientApp.esproj|c:\\rahulgit\\todoappclientapp\\todoappclientapp\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -34,25 +34,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "todo.ts",
               "DocumentMoniker": "C:\\RahulGit\\ToDoAppClientApp\\ToDoAppClientApp\\src\\app\\components\\todo\\todo.ts",
               "RelativeDocumentMoniker": "ToDoAppClientApp\\src\\app\\components\\todo\\todo.ts",
               "ToolTip": "C:\\RahulGit\\ToDoAppClientApp\\ToDoAppClientApp\\src\\app\\components\\todo\\todo.ts",
               "RelativeToolTip": "ToDoAppClientApp\\src\\app\\components\\todo\\todo.ts",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwBgAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2026-06-13T05:29:11.247Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "todoservices.ts",
               "DocumentMoniker": "C:\\RahulGit\\ToDoAppClientApp\\ToDoAppClientApp\\src\\app\\services\\todoservices.ts",
               "RelativeDocumentMoniker": "ToDoAppClientApp\\src\\app\\services\\todoservices.ts",
@@ -64,12 +68,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "app-module.ts",
               "DocumentMoniker": "C:\\RahulGit\\ToDoAppClientApp\\ToDoAppClientApp\\src\\app\\app-module.ts",
               "RelativeDocumentMoniker": "ToDoAppClientApp\\src\\app\\app-module.ts",
@@ -95,13 +95,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "todo.html",
               "DocumentMoniker": "C:\\RahulGit\\ToDoAppClientApp\\ToDoAppClientApp\\src\\app\\components\\todo\\todo.html",
               "RelativeDocumentMoniker": "ToDoAppClientApp\\src\\app\\components\\todo\\todo.html",
               "ToolTip": "C:\\RahulGit\\ToDoAppClientApp\\ToDoAppClientApp\\src\\app\\components\\todo\\todo.html",
               "RelativeToolTip": "ToDoAppClientApp\\src\\app\\components\\todo\\todo.html",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAmwB0AAABRAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAqwDIAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-06-13T08:14:44.182Z",
               "EditorCaption": ""
