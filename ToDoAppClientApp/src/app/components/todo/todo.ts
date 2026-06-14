@@ -16,6 +16,12 @@ export class Todo
   errorMessage : string = ""
   editingId: string = ""
   editTitle: string = ""
+  totalCount: number = 0
+  completedCount: number = 0
+  pendingCount: number = 0
+
+
+
   constructor(private todoService: Todoservices, private cdr: ChangeDetectorRef)
   {
     this.loadTodos();
@@ -25,6 +31,7 @@ export class Todo
     this.todoService.getAll().subscribe({
       next: (data) => {
         this.todos = data;
+        this.calculateCount()
         this.cdr.detectChanges();
       }
     });
@@ -43,7 +50,7 @@ export class Todo
         this.newTodoTitle = '';
         this.loadTodos();
       },
-      error: (err) => { this.errorMessage = err.error; this.cdr.detectChanges(); }
+      error: (err) => { this.errorMessage = err.error; this.calculateCount(); this.cdr.detectChanges(); }
     });
     this.newTodoTitle = ""
 
@@ -53,6 +60,7 @@ export class Todo
   startEdit(todo:TodoModel) {
     this.editingId = todo.id;
     this.editTitle = todo.title;
+    this.calculateCount();
     this.cdr.detectChanges();
   }
 
@@ -61,11 +69,13 @@ export class Todo
       next: () => {
         this.errorMessage = "";
         this.editingId = ""
+        this.calculateCount();
         this.cdr.detectChanges();
         this.loadTodos();
       },
       error: (err) => {
         this.errorMessage = err.error;
+        this.calculateCount();
         this.cdr.detectChanges();
       }
 
@@ -83,12 +93,14 @@ export class Todo
           this.errorMessage = "";
           this.editingId = ""
           this.editTitle = "";
+          this.calculateCount();
           this.cdr.detectChanges();
           this.loadTodos();
         },
         error: (err) => {
           this.errorMessage = err.error;
           todo.title = _title;
+          this.calculateCount();
           this.cdr.detectChanges();
         }
       });
@@ -107,14 +119,26 @@ export class Todo
         this.errorMessage = "";
         this.editingId = "";
         this.editTitle = "";
+        this.calculateCount();
         this.cdr.detectChanges();
         this.loadTodos();
       },
       error: (err) => {
         this.errorMessage = err.error;
+        this.calculateCount();
         this.cdr.detectChanges();
       }
     });
+  }
+
+  calculateCount()
+  {
+    this.totalCount = this.todos.length
+    
+    this.completedCount = this.todos.filter(x => x.isCompleted).length;
+    this.pendingCount = this.todos.filter(x => !x.isCompleted).length;
+
+
   }
 
 }
